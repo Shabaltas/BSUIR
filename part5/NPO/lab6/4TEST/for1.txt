@@ -1,0 +1,3 @@
+the first document to check the possibility of this application to find part -IS- in two files and delete it simultaniously
+the third line - the expected result of first line(second file'S easy to analyze)
+the first document to check the possibility of th application to find part -- in two files and delete it simultaniously

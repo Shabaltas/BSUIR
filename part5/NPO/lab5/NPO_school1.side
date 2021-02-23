@@ -1,0 +1,714 @@
+{
+  "id": "30ae6a59-e0b6-4718-8d60-8bf85e3aa86f",
+  "version": "2.0",
+  "name": "NPO_school",
+  "url": "https://120minsk.schools.by/",
+  "tests": [{
+    "id": "8b6d7484-b8f5-4bde-a32a-141184095e59",
+    "name": "EmptyLogin",
+    "commands": [{
+      "id": "ac8cb35b-9f04-44cb-bf74-715b44d29978",
+      "comment": "",
+      "command": "open",
+      "target": "https://120minsk.schools.by/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9c048828-d5ee-4d03-bd00-bef19c4570c7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3089585e-dc63-4156-8e7e-2824422ae1a3",
+      "comment": "",
+      "command": "click",
+      "target": "css=#sch_login_lnk > span",
+      "targets": [
+        ["css=#sch_login_lnk > span", "css:finder"],
+        ["xpath=//a[@id='sch_login_lnk']/span", "xpath:idRelative"],
+        ["xpath=//li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "db497ffa-ec04-4155-89fe-c680d5042f71",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button_gray:nth-child(2)",
+      "targets": [
+        ["css=.button_gray:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Войти']", "xpath:attributes"],
+        ["xpath=//div[@id='sch_login_box']/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "58fe42e7-2fce-46c7-8bf7-30296cddeaef",
+      "comment": "",
+      "command": "click",
+      "target": "css=.line_frm:nth-child(2) li",
+      "targets": [
+        ["css=.line_frm:nth-child(2) li", "css:finder"],
+        ["xpath=//div[@id='page_layout']/div/div/div[2]/div/div/div[2]/div/div/div[2]/div[2]/form/div/div[2]/div[2]/ul/li", "xpath:idRelative"],
+        ["xpath=//div[2]/ul/li", "xpath:position"],
+        ["xpath=//li[contains(.,'Это поле обязательно.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "14e01086-c5b1-45a3-9394-4cd0d8a445aa",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.line_frm:nth-child(2) li",
+      "targets": [
+        ["css=.line_frm:nth-child(2) li", "css:finder"],
+        ["xpath=//div[@id='page_layout']/div/div/div[2]/div/div/div[2]/div/div/div[2]/div[2]/form/div/div[2]/div[2]/ul/li", "xpath:idRelative"],
+        ["xpath=//div[2]/ul/li", "xpath:position"],
+        ["xpath=//li[contains(.,'Это поле обязательно.')]", "xpath:innerText"]
+      ],
+      "value": "Это поле обязательно."
+    }, {
+      "id": "1733eedd-6f3f-4c9b-8dde-07b2113ad2fb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.grid-outer",
+      "targets": [
+        ["css=.grid-outer", "css:finder"],
+        ["xpath=//div[@id='page_layout']/div/div", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "1fcd9e47-2d6f-401f-9497-346a3417094d",
+    "name": "NoPasswordLogin",
+    "commands": [{
+      "id": "38ae697d-a1b3-4485-93c6-defe3525d4a7",
+      "comment": "",
+      "command": "open",
+      "target": "https://120minsk.schools.by/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ac8888aa-efde-4941-8001-cc80991607a5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6d6ecb12-8465-42fd-bf3b-507bdc45eae4",
+      "comment": "",
+      "command": "click",
+      "target": "css=#sch_login_lnk > span",
+      "targets": [
+        ["css=#sch_login_lnk > span", "css:finder"],
+        ["xpath=//a[@id='sch_login_lnk']/span", "xpath:idRelative"],
+        ["xpath=//li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c660eeb9-01ad-4e30-a872-d6eed8bb3cb2",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.line:nth-child(1) > .text", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='sch_login_box']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bdc6542d-d83c-422b-9d69-e34696d031ce",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.line:nth-child(1) > .text", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='sch_login_box']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "lina.shabaltas@mail.ru"
+    }, {
+      "id": "aae5df76-df17-4ea2-8a77-7086eb6bbf50",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button_gray:nth-child(2)",
+      "targets": [
+        ["css=.button_gray:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Войти']", "xpath:attributes"],
+        ["xpath=//div[@id='sch_login_box']/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5de274e4-5b72-4b5a-b95a-77a1c5a13bbc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.errorlist > li",
+      "targets": [
+        ["css=.errorlist > li", "css:finder"],
+        ["xpath=//div[@id='page_layout']/div/div/div[2]/div/div/div[2]/div/div/div[2]/div[2]/form/div[2]/div[2]/div[2]/ul/li", "xpath:idRelative"],
+        ["xpath=//div[2]/ul/li", "xpath:position"],
+        ["xpath=//li[contains(.,'Это поле обязательно.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f6fbc21-f30d-4fca-bfe5-9ac26ae66640",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.errorlist > li",
+      "targets": [
+        ["css=.errorlist > li", "css:finder"],
+        ["xpath=//div[@id='page_layout']/div/div/div[2]/div/div/div[2]/div/div/div[2]/div[2]/form/div[2]/div[2]/div[2]/ul/li", "xpath:idRelative"],
+        ["xpath=//div[2]/ul/li", "xpath:position"],
+        ["xpath=//li[contains(.,'Это поле обязательно.')]", "xpath:innerText"]
+      ],
+      "value": "Это поле обязательно."
+    }]
+  }, {
+    "id": "c9d02441-7ec6-4544-b43b-4d2cd639f72f",
+    "name": "WrongAuth",
+    "commands": [{
+      "id": "83b2bcb8-7af6-455f-83ca-7b3493e5489c",
+      "comment": "",
+      "command": "open",
+      "target": "https://120minsk.schools.by/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "44b36e8e-7867-4479-9921-4a0f21285204",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "35c05dc1-d927-4baf-aef9-957e4cc77cda",
+      "comment": "",
+      "command": "click",
+      "target": "id=sch_login_lnk",
+      "targets": [
+        ["id=sch_login_lnk", "id"],
+        ["linkText=Войти", "linkText"],
+        ["css=#sch_login_lnk", "css:finder"],
+        ["xpath=//a[@id='sch_login_lnk']", "xpath:attributes"],
+        ["xpath=//div[@id='page_layout']/div/div/div/form/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "52791630-3141-449e-b5d9-fea2f2e58352",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.line:nth-child(1) > .text", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='sch_login_box']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba3d1390-330b-42ef-8853-b5de55b9a372",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.line:nth-child(1) > .text", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='sch_login_box']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "lina.shabaltas@mail.ru"
+    }, {
+      "id": "64f46cca-ce6b-4f2b-9cd6-bb840a7adeb0",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.line:nth-child(2) > .text", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='sch_login_box']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f8aa6f3-b8ae-436b-9a38-941641f7e7f2",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.line:nth-child(2) > .text", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='sch_login_box']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "12345678"
+    }, {
+      "id": "f1b69393-da68-4f3e-a430-75b3ad57d537",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button_gray:nth-child(2)",
+      "targets": [
+        ["css=.button_gray:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Войти']", "xpath:attributes"],
+        ["xpath=//div[@id='sch_login_box']/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a14513b-5084-4bd6-b54d-a3fb0a763eb8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.errorlist > li",
+      "targets": [
+        ["css=.errorlist > li", "css:finder"],
+        ["xpath=//div[@id='page_layout']/div/div/div[2]/div/div/div[2]/div/div/div[2]/div[2]/form/ul/li", "xpath:idRelative"],
+        ["xpath=//form/ul/li", "xpath:position"],
+        ["xpath=//li[contains(.,'Пожалуйста, введите правильные Логин и пароль. Оба поля могут быть чувствительны к регистру.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "af299a72-ad55-4a92-8090-4503a21bdb8b",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.errorlist > li",
+      "targets": [
+        ["css=.errorlist > li", "css:finder"],
+        ["xpath=//div[@id='page_layout']/div/div/div[2]/div/div/div[2]/div/div/div[2]/div[2]/form/ul/li", "xpath:idRelative"],
+        ["xpath=//form/ul/li", "xpath:position"],
+        ["xpath=//li[contains(.,'Пожалуйста, введите правильные Логин и пароль. Оба поля могут быть чувствительны к регистру.')]", "xpath:innerText"]
+      ],
+      "value": "Пожалуйста, введите правильные Логин и пароль. Оба поля могут быть чувствительны к регистру."
+    }]
+  }, {
+    "id": "76afa8ec-3372-461e-849b-23872fd196ba",
+    "name": "EmptyCode",
+    "commands": [{
+      "id": "b59fb533-9a91-4252-b018-7743433bd375",
+      "comment": "",
+      "command": "open",
+      "target": "https://120minsk.schools.by/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2e788bbd-a19f-4f64-946b-c5ace8ecebf4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "02c1d4b6-3a72-42a5-91be-36a4c85ceac9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sch_top_menu:nth-child(2) > li:nth-child(1) span",
+      "targets": [
+        ["css=.sch_top_menu:nth-child(2) > li:nth-child(1) span", "css:finder"],
+        ["xpath=//div[@id='page_layout']/div/div/div/form/ul/li/a/span", "xpath:idRelative"],
+        ["xpath=//li/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Регистрация по пригласительному коду')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f6b1fd2-9226-4804-8486-7593e20c86bf",
+      "comment": "",
+      "command": "click",
+      "target": "id=registration_code_button",
+      "targets": [
+        ["id=registration_code_button", "id"],
+        ["css=#registration_code_button", "css:finder"],
+        ["xpath=//input[@id='registration_code_button']", "xpath:attributes"],
+        ["xpath=//form[@id='registration_code_form']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/form/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8b46053-e197-4f7f-a62f-70b0345d5a6a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=registration_code_button",
+      "targets": [
+        ["id=registration_code_button", "id"],
+        ["css=#registration_code_button", "css:finder"],
+        ["xpath=//input[@id='registration_code_button']", "xpath:attributes"],
+        ["xpath=//form[@id='registration_code_form']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/form/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a983344e-3e17-4d05-afff-c6955f20c2d4",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=registration_code_button",
+      "targets": [
+        ["id=registration_code_button", "id"],
+        ["css=#registration_code_button", "css:finder"],
+        ["xpath=//input[@id='registration_code_button']", "xpath:attributes"],
+        ["xpath=//form[@id='registration_code_form']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/form/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "58c26d1a-da0a-42bf-a99a-ea8a7870553b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.error:nth-child(2)",
+      "targets": [
+        ["css=.error:nth-child(2)", "css:finder"],
+        ["xpath=//form[@id='registration_code_form']/div[2]/label", "xpath:idRelative"],
+        ["xpath=//div[2]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Поле должно быть заполнено.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d46454fb-0476-407c-8f9e-0a86f175bb80",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.error:nth-child(2)",
+      "targets": [
+        ["css=.error:nth-child(2)", "css:finder"],
+        ["xpath=//form[@id='registration_code_form']/div[2]/label", "xpath:idRelative"],
+        ["xpath=//div[2]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Поле должно быть заполнено.')]", "xpath:innerText"]
+      ],
+      "value": "Поле должно быть заполнено."
+    }]
+  }, {
+    "id": "50ec770c-e0d3-4ed4-9c5a-2e84023ac367",
+    "name": "WrongCode",
+    "commands": [{
+      "id": "5f73f05b-db16-4355-b902-7091084865ba",
+      "comment": "",
+      "command": "open",
+      "target": "https://120minsk.schools.by/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6018c8be-aa60-4261-bfc6-8d083f20d172",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c1a72a01-97b0-4c67-b377-c6456b575aca",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sch_top_menu:nth-child(2) > li:nth-child(1) span",
+      "targets": [
+        ["css=.sch_top_menu:nth-child(2) > li:nth-child(1) span", "css:finder"],
+        ["xpath=//div[@id='page_layout']/div/div/div/form/ul/li/a/span", "xpath:idRelative"],
+        ["xpath=//li/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Регистрация по пригласительному коду')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9499b38a-1cb7-4707-ae14-1bfb4dd7867e",
+      "comment": "",
+      "command": "click",
+      "target": "id=registration_code",
+      "targets": [
+        ["id=registration_code", "id"],
+        ["name=invitation_code", "name"],
+        ["css=#registration_code", "css:finder"],
+        ["xpath=//input[@id='registration_code']", "xpath:attributes"],
+        ["xpath=//form[@id='registration_code_form']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/form/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ba1a86a-f805-418b-adc3-4033ed67c3ce",
+      "comment": "",
+      "command": "type",
+      "target": "id=registration_code",
+      "targets": [
+        ["id=registration_code", "id"],
+        ["name=invitation_code", "name"],
+        ["css=#registration_code", "css:finder"],
+        ["xpath=//input[@id='registration_code']", "xpath:attributes"],
+        ["xpath=//form[@id='registration_code_form']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/form/div[2]/input", "xpath:position"]
+      ],
+      "value": "1111"
+    }, {
+      "id": "21671105-3475-4243-a89d-67fe54f6cc6e",
+      "comment": "",
+      "command": "click",
+      "target": "id=registration_code_button",
+      "targets": [
+        ["id=registration_code_button", "id"],
+        ["css=#registration_code_button", "css:finder"],
+        ["xpath=//input[@id='registration_code_button']", "xpath:attributes"],
+        ["xpath=//form[@id='registration_code_form']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/form/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b0c6d9b-8b8f-4d87-b52b-6370a4aedff0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.island:nth-child(4)",
+      "targets": [
+        ["css=.island:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='page_layout']/div/div/div[2]/div/div/div[2]/div[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8f46203f-121d-4d9b-8ccd-5da666348835",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.clr-red",
+      "targets": [
+        ["css=.clr-red", "css:finder"],
+        ["xpath=//div[@id='registration_info_container']/div/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Пользователь по пригласительному коду не найден.')]", "xpath:innerText"]
+      ],
+      "value": "Пользователь по пригласительному коду не найден."
+    }]
+  }, {
+    "id": "fe8e97f9-55d5-43fe-bc75-a20734901f51",
+    "name": "Mail",
+    "commands": [{
+      "id": "1919bb4b-301f-43db-b8d6-c11d85cff0a2",
+      "comment": "",
+      "command": "open",
+      "target": "https://120minsk.schools.by/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "71be9d83-ff97-447a-bb6c-056f680d760f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ba4a9ff9-16a7-4160-bbdf-046490b5dc64",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Обратная связь",
+      "targets": [
+        ["linkText=Обратная связь", "linkText"],
+        ["css=.act3 > .d1 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Обратная связь')]", "xpath:link"],
+        ["xpath=//div[@id='page_layout']/div[3]/div[2]/div/ul/li[8]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/feedback')]", "xpath:href"],
+        ["xpath=//li[8]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Обратная связь')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ca70385-f8a2-46e5-a1ac-0b0757c76f88",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_addressee",
+      "targets": [
+        ["id=id_addressee", "id"],
+        ["name=addressee", "name"],
+        ["css=#form_eapplications_fiz #id_addressee", "css:finder"],
+        ["xpath=//input[@id='id_addressee']", "xpath:attributes"],
+        ["xpath=//form[@id='form_eapplications_fiz']/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a79e69e9-0646-4ba0-8e03-4feac0c67128",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_addressee",
+      "targets": [
+        ["id=id_addressee", "id"],
+        ["name=addressee", "name"],
+        ["css=#form_eapplications_fiz #id_addressee", "css:finder"],
+        ["xpath=//input[@id='id_addressee']", "xpath:attributes"],
+        ["xpath=//form[@id='form_eapplications_fiz']/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Директор школы"
+    }, {
+      "id": "2113aa0a-1b12-42e3-9b2e-e0afd2b8a869",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_user_name",
+      "targets": [
+        ["id=id_user_name", "id"],
+        ["name=user_name", "name"],
+        ["css=#form_eapplications_fiz #id_user_name", "css:finder"],
+        ["xpath=//input[@id='id_user_name']", "xpath:attributes"],
+        ["xpath=//form[@id='form_eapplications_fiz']/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d28b2f0-a611-4259-b451-5da2f2a5340c",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_user_name",
+      "targets": [
+        ["id=id_user_name", "id"],
+        ["name=user_name", "name"],
+        ["css=#form_eapplications_fiz #id_user_name", "css:finder"],
+        ["xpath=//input[@id='id_user_name']", "xpath:attributes"],
+        ["xpath=//form[@id='form_eapplications_fiz']/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "John Doe"
+    }, {
+      "id": "ee1bbe71-3828-4db5-b643-8525d8e67f6d",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_user_contacts",
+      "targets": [
+        ["id=id_user_contacts", "id"],
+        ["name=user_contacts", "name"],
+        ["css=#form_eapplications_fiz #id_user_contacts", "css:finder"],
+        ["xpath=//input[@id='id_user_contacts']", "xpath:attributes"],
+        ["xpath=//form[@id='form_eapplications_fiz']/div[3]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "87a4d46b-dff4-4202-95e3-d1a453beb043",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_user_contacts",
+      "targets": [
+        ["id=id_user_contacts", "id"],
+        ["name=user_contacts", "name"],
+        ["css=#form_eapplications_fiz #id_user_contacts", "css:finder"],
+        ["xpath=//input[@id='id_user_contacts']", "xpath:attributes"],
+        ["xpath=//form[@id='form_eapplications_fiz']/div[3]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Крылова 2"
+    }, {
+      "id": "e1b10750-9b6c-45bf-8519-bd7d117df8bc",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_user_email",
+      "targets": [
+        ["id=id_user_email", "id"],
+        ["name=user_email", "name"],
+        ["css=.line_frm:nth-child(6) #id_user_email", "css:finder"],
+        ["xpath=//input[@id='id_user_email']", "xpath:attributes"],
+        ["xpath=//form[@id='form_eapplications_fiz']/div[4]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d37477e0-f0dc-451b-b422-61cdfd9bd45e",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_user_email",
+      "targets": [
+        ["id=id_user_email", "id"],
+        ["name=user_email", "name"],
+        ["css=.line_frm:nth-child(6) #id_user_email", "css:finder"],
+        ["xpath=//input[@id='id_user_email']", "xpath:attributes"],
+        ["xpath=//form[@id='form_eapplications_fiz']/div[4]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "someEmail@mail.ry"
+    }, {
+      "id": "f8e4aff6-5678-4cb9-a65d-8e95e248d247",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_text",
+      "targets": [
+        ["id=id_text", "id"],
+        ["name=text", "name"],
+        ["css=#form_eapplications_fiz #id_text", "css:finder"],
+        ["xpath=//textarea[@id='id_text']", "xpath:attributes"],
+        ["xpath=//form[@id='form_eapplications_fiz']/div[5]/div[2]/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "79b4fd4b-3beb-4d0e-b252-2c53e7219e28",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_text",
+      "targets": [
+        ["id=id_text", "id"],
+        ["name=text", "name"],
+        ["css=#form_eapplications_fiz #id_text", "css:finder"],
+        ["xpath=//textarea[@id='id_text']", "xpath:attributes"],
+        ["xpath=//form[@id='form_eapplications_fiz']/div[5]/div[2]/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Изложение"
+    }, {
+      "id": "3b8d0576-3d62-47a7-86c9-10653f80b522",
+      "comment": "",
+      "command": "click",
+      "target": "css=#form_eapplications_fiz .button5",
+      "targets": [
+        ["css=#form_eapplications_fiz .button5", "css:finder"],
+        ["xpath=//input[@value='Отправить']", "xpath:attributes"],
+        ["xpath=//form[@id='form_eapplications_fiz']/div[9]/div/input", "xpath:idRelative"],
+        ["xpath=//div[9]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a3ef9fee-8d80-42ec-952d-5c7b993277c9",
+      "comment": "",
+      "command": "click",
+      "target": "css=#form_eapplications_fiz li",
+      "targets": [
+        ["css=#form_eapplications_fiz li", "css:finder"],
+        ["xpath=//form[@id='form_eapplications_fiz']/div[7]/div[2]/div/ul/li", "xpath:idRelative"],
+        ["xpath=//div[7]/div[2]/div/ul/li", "xpath:position"],
+        ["xpath=//li[contains(.,'Это поле обязательно.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3bedd1da-d3c7-4d43-93a7-b264a4d28587",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=#form_eapplications_fiz li",
+      "targets": [
+        ["css=#form_eapplications_fiz li", "css:finder"],
+        ["xpath=//form[@id='form_eapplications_fiz']/div[7]/div[2]/div/ul/li", "xpath:idRelative"],
+        ["xpath=//div[7]/div[2]/div/ul/li", "xpath:position"],
+        ["xpath=//li[contains(.,'Это поле обязательно.')]", "xpath:innerText"]
+      ],
+      "value": "Это поле обязательно."
+    }, {
+      "id": "3f66aef4-39fd-486c-a397-6c9566275c36",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.mess",
+      "targets": [
+        ["css=.mess", "css:finder"],
+        ["xpath=//div[9]/div/div", "xpath:position"]
+      ],
+      "value": "Письмо не отправлено"
+    }]
+  }],
+  "suites": [{
+    "id": "3d914023-dca1-442b-80b3-257d9c7e1868",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://120minsk.schools.by/"],
+  "plugins": []
+}

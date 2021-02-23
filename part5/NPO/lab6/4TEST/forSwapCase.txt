@@ -1,0 +1,3 @@
+This is a file for testing "Sublime Text" function
+ of swapping case for Software reliability 6th lab
+  by Angelina Shabaltas.

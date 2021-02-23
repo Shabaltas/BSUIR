@@ -1,0 +1,5 @@
+<ObjectMap version="1">
+  <ObjectMapEntry id="C  Users Asus Desktop task5 withId" locator="/Window[@caption=&apos;C:\Users\Asus\Desktop\task5\withId.txt (task5) - Sublime Text (UNREGISTERED)&apos;]">
+    <ObjectMapEntry id="Delete File" locator="//MenuItem[@caption=&apos;Delete File&apos;]"/>
+  </ObjectMapEntry>
+</ObjectMap>

@@ -1,0 +1,5 @@
+﻿  StaticImport.cpp
+C:\Users\Asus\Desktop\StaticImport\StaticImport\StaticImport.cpp(99,9): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'HANDLE'
+C:\Users\Asus\Desktop\StaticImport\StaticImport\StaticImport.cpp(103,9): warning C4129: 'e': unrecognized character escape sequence
+C:\Users\Asus\Desktop\StaticImport\StaticImport\StaticImport.cpp(113,10): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'HANDLE'
+  StaticImport.vcxproj -> C:\Users\Asus\Desktop\StaticImport\Debug\StaticImport.exe

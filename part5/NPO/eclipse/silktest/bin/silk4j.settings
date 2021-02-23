@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recorderProject version="20.5">
+  <applicationConfiguration>
+    <moduleNamePattern>*\sublime_text.exe</moduleNamePattern>
+    <baseStateInfo>
+      <executable>%ProgramFiles%\Sublime Text 3\sublime_text.exe</executable>
+      <workingDirectory>%ProgramFiles%\Sublime Text 3</workingDirectory>
+      <locator>C  Users Asus BSUIRlabs part5 NPO</locator>
+    </baseStateInfo>
+  </applicationConfiguration>
+  <agentOptions>
+    <entry>
+      <string>OPT_ASSET_NAMESPACE</string>
+      <string>silktest</string>
+    </entry>
+  </agentOptions>
+</recorderProject>

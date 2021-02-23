@@ -1,0 +1,8 @@
+<ObjectMap version="1">
+  <ObjectMapEntry id="Select Folder" locator="/Window[@caption=&apos;Select Folder&apos;]">
+    <ObjectMapEntry id="DirectUIHWND" locator="//Control[@windowClassName=&apos;DirectUIHWND&apos;][2]"/>
+    <ObjectMapEntry id="Select Folder" locator="//PushButton[@caption=&apos;Select Folder&apos;]"/>
+    <ObjectMapEntry id="Tree" locator="//Tree"/>
+    <ObjectMapEntry id="‎lab6" locator="//DropDownToolItem[@caption=&apos;‎lab6&apos;]"/>
+  </ObjectMapEntry>
+</ObjectMap>

@@ -1,0 +1,434 @@
+{
+  "id": "6fadf22c-c247-45f8-a297-e142d906fb96",
+  "version": "2.0",
+  "name": "NPO",
+  "url": "http://sch84.minsk.edu.by",
+  "tests": [{
+    "id": "6e5da5e0-44e9-41b7-87e1-b25da28cd8d8",
+    "name": "english",
+    "commands": [{
+      "id": "d39cedae-d546-4cf3-8d52-aa658aa60e77",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "de2ea94d-e0e6-43bd-bad0-bafdb8742d47",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0fbeafe7-6576-4257-8208-5d70aa3ea379",
+      "comment": "",
+      "command": "click",
+      "target": "css=#\\3A 0\\.targetLanguage > span",
+      "targets": [
+        ["css=#\\3A 0\\.targetLanguage > span", "css:finder"],
+        ["xpath=//div[@id=':0.targetLanguage']/span", "xpath:idRelative"],
+        ["xpath=//div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'белорусский​▼')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2554c82-d68f-4d97-abbe-e33add86041d",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "5bb97534-7e69-4d93-afad-e1116e8b6719",
+      "comment": "",
+      "command": "click",
+      "target": "css=.goog-te-menu2-item:nth-child(2) .text",
+      "targets": [
+        ["css=.goog-te-menu2-item:nth-child(2) .text", "css:finder"],
+        ["xpath=//div[@id=':1.menuBody']/table/tbody/tr/td/a[2]/div/span[2]", "xpath:idRelative"],
+        ["xpath=//a[2]/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'английский')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "77b2577a-576f-4d18-999d-808389ce85e5",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "304a42d8-366d-46e7-8291-e326ac02482c",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f5bb66c6-f620-4bf7-a608-9ebbe487057c",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=li:nth-child(2) > .sf-with-ul > font > font",
+      "targets": [
+        ["css=li:nth-child(2) > .sf-with-ul > font > font", "css:finder"],
+        ["xpath=//form[@id='ctl01']/div[3]/div/div/header/nav/ul/li[2]/a/font/font", "xpath:idRelative"],
+        ["xpath=//nav/ul/li[2]/a/font/font", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b38b0b6a-de05-4881-8eaa-a877f9bea8a7",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "23bb7dfa-37d4-4806-969d-a4535bbb5464",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.sfHover > .sf-with-ul > font > font",
+      "targets": [
+        ["css=.sfHover > .sf-with-ul > font > font", "css:finder"],
+        ["xpath=//form[@id='ctl01']/div[3]/div/div/header/nav/ul/li[2]/a/font/font", "xpath:idRelative"],
+        ["xpath=//nav/ul/li[2]/a/font/font", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce8004b9-342e-4a8d-862e-8b8b20701045",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6f38b5be-45af-4bb7-8b04-9a4552d420aa",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b413ff76-9145-4357-b13e-b67e3bf59a35",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "433535a8-4c67-4f62-bab8-06583da67474",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3112965a-70b9-4ecd-955c-b5a115c06c33",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3657b451-42e5-4e4d-9cee-bbbd53dee0d1",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fff1cf4d-89b4-4962-80bb-fdd459338369",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "67787559-2dd0-4ee5-9b47-a06ee31a221f",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "444b03a9-2c53-4603-9f30-8c302abdd14f",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4fcf39d2-184c-457e-abe2-b4a814ca7025",
+      "comment": "",
+      "command": "click",
+      "target": "css=.carousel > ul",
+      "targets": [
+        ["css=.carousel > ul", "css:finder"],
+        ["xpath=//form[@id='ctl01']/div[3]/aside/div/div/div/div/ul", "xpath:idRelative"],
+        ["xpath=//aside/div/div/div/div/ul", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "76a6e5a8-6793-43bf-888f-228e4f494e51",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=li:nth-child(4) > a:nth-child(2) > font > font",
+      "targets": [
+        ["css=li:nth-child(4) > a:nth-child(2) > font > font", "css:finder"],
+        ["xpath=//form[@id='ctl01']/div[3]/aside/div/div/div/div/ul/li[4]/a/font/font", "xpath:idRelative"],
+        ["xpath=//div/ul/li[4]/a/font/font", "xpath:position"]
+      ],
+      "value": "EDUCATIONAL WORK"
+    }, {
+      "id": "e2bcfccc-6004-43f2-aad3-e10522ee3a57",
+      "comment": "",
+      "command": "click",
+      "target": "css=.main-footer",
+      "targets": [
+        ["css=.main-footer", "css:finder"],
+        ["xpath=//form[@id='ctl01']/div[3]/footer/div", "xpath:idRelative"],
+        ["xpath=//footer/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6ce5e76-1dcf-45bc-abff-271e4bd277a1",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=p font:nth-child(2)",
+      "targets": [
+        ["css=p font:nth-child(2)", "css:finder"],
+        ["xpath=//form[@id='ctl01']/div[3]/footer/div/div/div/p/font[2]/font[2]", "xpath:idRelative"],
+        ["xpath=//font[2]/font[2]", "xpath:position"]
+      ],
+      "value": "№1141001015 certificate from 15.07.2010g."
+    }]
+  }, {
+    "id": "cdf21cb0-1e63-4604-b73e-2b4c1bad35e3",
+    "name": "belorussian",
+    "commands": [{
+      "id": "5cb1ec24-b167-4ed8-909c-f2ce32e9072e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "90246df8-2560-4304-9acb-261fd8c705f6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8ec31231-19c2-4f81-a842-19f6e93258c8",
+      "comment": "",
+      "command": "click",
+      "target": "css=#\\3A 0\\.targetLanguage > span",
+      "targets": [
+        ["css=#\\3A 0\\.targetLanguage > span", "css:finder"],
+        ["xpath=//div[@id=':0.targetLanguage']/span", "xpath:idRelative"],
+        ["xpath=//div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'английский​▼')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e82e2f0f-22df-4118-90a5-5b69763ac6f5",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a5b6730-95e1-41db-a83b-7fb5c3cf60f8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.goog-te-menu2-item:nth-child(3) .text",
+      "targets": [
+        ["css=.goog-te-menu2-item:nth-child(3) .text", "css:finder"],
+        ["xpath=//div[@id=':1.menuBody']/table/tbody/tr/td/a[3]/div/span[2]", "xpath:idRelative"],
+        ["xpath=//a[3]/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'белорусский')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6070c7c5-0d88-4860-a997-25452eb073ce",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "31311acd-cce3-451e-9741-cb552a2da7d2",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "772f90ab-251e-40a6-a7ac-014227cdaaf4",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=li:nth-child(2) > .sf-with-ul > font > font",
+      "targets": [
+        ["css=li:nth-child(2) > .sf-with-ul > font > font", "css:finder"],
+        ["xpath=//form[@id='ctl01']/div[3]/div/div/header/nav/ul/li[2]/a/font/font", "xpath:idRelative"],
+        ["xpath=//nav/ul/li[2]/a/font/font", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ec8ddcd-b753-4cae-8183-d1ff206943e1",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3853bb5a-864a-42b7-82c1-0249c7b77a90",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.sfHover > .sf-with-ul > font > font",
+      "targets": [
+        ["css=.sfHover > .sf-with-ul > font > font", "css:finder"],
+        ["xpath=//form[@id='ctl01']/div[3]/div/div/header/nav/ul/li[2]/a/font/font", "xpath:idRelative"],
+        ["xpath=//nav/ul/li[2]/a/font/font", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "53521ef6-d9e8-4799-bb82-83e6869b83bc",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bbfb4467-a148-4f7c-8135-e686d683446a",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d4c53305-acca-40a8-8316-7bee7f6be83e",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b05b800a-5b2c-4fff-9777-ddad9117a9da",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "62bfa3da-c272-4043-ba62-e6d38aa45f53",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7420f089-ba8d-421e-a7fc-6dfd992ffe36",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "24cd2de1-0826-405c-adb8-afa8a8a6f528",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3c0e7c63-c221-4925-a57d-1dc1745565df",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "74cd00f4-f01e-44d8-ad9a-56acc9e3c206",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b7c781f2-c540-47e1-8c62-005e32795862",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.nbs-flexisel-item:nth-child(5) img",
+      "targets": [
+        ["css=.nbs-flexisel-item:nth-child(5) img", "css:finder"],
+        ["xpath=//ul[@id='flexiselDemo3']/li[5]/a/img", "xpath:idRelative"],
+        ["xpath=//li[5]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "211701e3-0411-4ed8-aed1-7b58cc144cae",
+      "comment": "",
+      "command": "click",
+      "target": "css=.carousel > ul",
+      "targets": [
+        ["css=.carousel > ul", "css:finder"],
+        ["xpath=//form[@id='ctl01']/div[3]/aside/div/div/div/div/ul", "xpath:idRelative"],
+        ["xpath=//aside/div/div/div/div/ul", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "80533ade-4b0e-4c58-941f-3277d1c717da",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.carousel li:nth-child(4)",
+      "targets": [
+        ["css=.carousel li:nth-child(4)", "css:finder"],
+        ["xpath=//form[@id='ctl01']/div[3]/aside/div/div/div/div/ul/li[4]", "xpath:idRelative"],
+        ["xpath=//aside/div/div/div/div/ul/li[4]", "xpath:position"]
+      ],
+      "value": "ВЫХАВАЎЧАЯ РАБОТА"
+    }, {
+      "id": "dddf5245-eab1-4da2-9cbb-e0710622740b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.main-footer",
+      "targets": [
+        ["css=.main-footer", "css:finder"],
+        ["xpath=//form[@id='ctl01']/div[3]/footer/div", "xpath:idRelative"],
+        ["xpath=//footer/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ec22fba-e71f-40e4-9cac-0c48dc81fbad",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=p font:nth-child(2)",
+      "targets": [
+        ["css=p font:nth-child(2)", "css:finder"],
+        ["xpath=//form[@id='ctl01']/div[3]/footer/div/div/div/p/font[2]/font[2]", "xpath:idRelative"],
+        ["xpath=//font[2]/font[2]", "xpath:position"]
+      ],
+      "value": "сведчанне №1141001015 ад 15.07.2010г."
+    }]
+  }],
+  "suites": [{
+    "id": "aa1e1cb1-4fe2-4403-924e-0e163dd9ebb6",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://sch84.minsk.edu.by/"],
+  "plugins": []
+}

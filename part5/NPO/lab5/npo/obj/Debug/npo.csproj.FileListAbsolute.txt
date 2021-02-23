@@ -1,0 +1,8 @@
+C:\Users\Asus\BSUIRlabs\part5\NPO\lab5\npo\bin\Debug\npo.exe
+C:\Users\Asus\BSUIRlabs\part5\NPO\lab5\npo\bin\Debug\npo.pdb
+C:\Users\Asus\BSUIRlabs\part5\NPO\lab5\npo\bin\Debug\WebDriver.dll
+C:\Users\Asus\BSUIRlabs\part5\NPO\lab5\npo\bin\Debug\WebDriver.xml
+C:\Users\Asus\BSUIRlabs\part5\NPO\lab5\npo\obj\Debug\npo.csprojAssemblyReference.cache
+C:\Users\Asus\BSUIRlabs\part5\NPO\lab5\npo\obj\Debug\npo.csproj.CopyComplete
+C:\Users\Asus\BSUIRlabs\part5\NPO\lab5\npo\obj\Debug\npo.exe
+C:\Users\Asus\BSUIRlabs\part5\NPO\lab5\npo\obj\Debug\npo.pdb

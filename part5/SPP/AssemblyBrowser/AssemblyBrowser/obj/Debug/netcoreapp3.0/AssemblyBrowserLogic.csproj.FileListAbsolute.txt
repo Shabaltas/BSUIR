@@ -1,0 +1,14 @@
+C:\Users\Asus\BSUIRtheory\part5\СПП\AssemblyBrowser\AssemblyBrowserLogic\bin\Debug\netcoreapp3.0\AssemblyBrowserLogic.deps.json
+C:\Users\Asus\BSUIRtheory\part5\СПП\AssemblyBrowser\AssemblyBrowserLogic\bin\Debug\netcoreapp3.0\AssemblyBrowserLogic.dll
+C:\Users\Asus\BSUIRtheory\part5\СПП\AssemblyBrowser\AssemblyBrowserLogic\bin\Debug\netcoreapp3.0\AssemblyBrowserLogic.pdb
+C:\Users\Asus\BSUIRtheory\part5\СПП\AssemblyBrowser\AssemblyBrowserLogic\obj\Debug\netcoreapp3.0\AssemblyBrowserLogic.AssemblyInfoInputs.cache
+C:\Users\Asus\BSUIRtheory\part5\СПП\AssemblyBrowser\AssemblyBrowserLogic\obj\Debug\netcoreapp3.0\AssemblyBrowserLogic.AssemblyInfo.cs
+C:\Users\Asus\BSUIRtheory\part5\СПП\AssemblyBrowser\AssemblyBrowserLogic\obj\Debug\netcoreapp3.0\AssemblyBrowserLogic.dll
+C:\Users\Asus\BSUIRtheory\part5\СПП\AssemblyBrowser\AssemblyBrowserLogic\obj\Debug\netcoreapp3.0\AssemblyBrowserLogic.pdb
+C:\Users\Asus\BSUIRtheory\part5\СПП\AssemblyBrowser\AssemblyBrowser\bin\Debug\netcoreapp3.0\AssemblyBrowserLogic.deps.json
+C:\Users\Asus\BSUIRtheory\part5\СПП\AssemblyBrowser\AssemblyBrowser\bin\Debug\netcoreapp3.0\AssemblyBrowserLogic.dll
+C:\Users\Asus\BSUIRtheory\part5\СПП\AssemblyBrowser\AssemblyBrowser\bin\Debug\netcoreapp3.0\AssemblyBrowserLogic.pdb
+C:\Users\Asus\BSUIRtheory\part5\СПП\AssemblyBrowser\AssemblyBrowser\obj\Debug\netcoreapp3.0\AssemblyBrowserLogic.AssemblyInfoInputs.cache
+C:\Users\Asus\BSUIRtheory\part5\СПП\AssemblyBrowser\AssemblyBrowser\obj\Debug\netcoreapp3.0\AssemblyBrowserLogic.AssemblyInfo.cs
+C:\Users\Asus\BSUIRtheory\part5\СПП\AssemblyBrowser\AssemblyBrowser\obj\Debug\netcoreapp3.0\AssemblyBrowserLogic.dll
+C:\Users\Asus\BSUIRtheory\part5\СПП\AssemblyBrowser\AssemblyBrowser\obj\Debug\netcoreapp3.0\AssemblyBrowserLogic.pdb

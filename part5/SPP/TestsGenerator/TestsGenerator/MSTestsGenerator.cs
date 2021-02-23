@@ -1,0 +1,182 @@
+﻿using System;
+using System.Collections.Concurrent;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.CodeAnalysis;
+using Microsoft.CodeAnalysis.CSharp;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
+using System.Threading.Tasks.Dataflow;
+using static Microsoft.CodeAnalysis.CSharp.SyntaxFactory;
+using System.Threading;
+
+namespace TestsGenerator
+{
+    public sealed class MSTestsGenerator : ITestsGenerator
+    {
+        public int MaxReadTasks { get; set; }
+        public int MaxGenerateTasks { get; set; }
+        public int MaxWriteTasks { get; set; }
+
+        public MSTestsGenerator(int _maxReadTasks, int _maxGenerateTasks, int _maxWriteTasks)
+        {
+            if (_maxGenerateTasks < 1 || _maxReadTasks < 1 || _maxWriteTasks < 1)
+                throw new ArgumentException("Count of tasks must be positive number!");
+            MaxReadTasks = _maxReadTasks;
+            MaxWriteTasks = _maxWriteTasks;
+            MaxGenerateTasks = _maxGenerateTasks;
+        }
+        private Task<int> MyAsync(int i)
+        {
+            Console.WriteLine("myasync start " + i + " " + Thread.CurrentThread.ManagedThreadId);
+            Task<int> res = new Task<int>(() => i+1);
+            return Task.Run(() => new Task<int>(() => i + 1));
+            Console.WriteLine("myasync stop " + i + " " + Thread.CurrentThread.ManagedThreadId);
+           // return res.Result;
+        }
+        public Task GenerateTests(string[] classFiles, string pathToSave)
+        {
+            int i = 5;
+            var getText = new TransformBlock<string, string>(async file =>
+            {
+                Console.WriteLine("Start reading : " + Thread.CurrentThread.ManagedThreadId);
+                string result = "";
+                using (StreamReader streamReader = new StreamReader(file))
+                    result = await streamReader.ReadToEndAsync();
+                     /*  var smth = MyAsync(i++);
+                       Console.WriteLine(smth);*/
+                Console.WriteLine("Stop reading: " + Thread.CurrentThread.ManagedThreadId);
+                
+                return result;
+            }, new ExecutionDataflowBlockOptions
+            {
+                MaxDegreeOfParallelism = MaxReadTasks
+            }
+            );
+
+            var getTests = new TransformBlock<string, string[]>(text =>
+            {
+                var classes = GetClassesFromText(text);
+                var result = new BlockingCollection<string>();
+                foreach (var @class in classes)
+                {
+                    result.Add(GenerateClassTest(@class));
+                }
+                return result.ToArray();
+            }, new ExecutionDataflowBlockOptions
+            {
+                MaxDegreeOfParallelism = MaxGenerateTasks
+            }
+            );
+
+            var saveTests = new ActionBlock<string[]>(action: async tests =>
+            {
+                foreach (var test in tests)
+                {
+                    var filename = Path.Combine(pathToSave, GetTestFilename(test) + ".cs");
+                    using (var outputFile = new StreamWriter(filename, append: false))
+                    {
+                        await outputFile.WriteAsync(test);
+                    } 
+                }
+            }, new ExecutionDataflowBlockOptions
+            {
+                MaxDegreeOfParallelism = MaxWriteTasks
+            }
+            );
+
+            var linkOptions = new DataflowLinkOptions { PropagateCompletion = true };
+
+            getText.LinkTo(getTests, linkOptions);
+            getTests.LinkTo(saveTests, linkOptions);
+            foreach (var file in classFiles)
+            {
+                getText.Post(file);
+            }
+            getText.Complete();
+            return saveTests.Completion;
+        }
+
+        private string GetTestFilename(string test)
+        {
+            var tree = CSharpSyntaxTree.ParseText(test);
+            var root = tree.GetRoot();
+            var @class = root.DescendantNodes().OfType<ClassDeclarationSyntax>().First();
+            return @class.Identifier.ValueText;
+        }
+
+        private ClassDeclarationSyntax[] GetClassesFromText(string fileContent)
+        {
+            var tree = CSharpSyntaxTree.ParseText(fileContent);
+            var root = tree.GetRoot();
+            return root.DescendantNodes().OfType<ClassDeclarationSyntax>().Where(@class => @class.Modifiers.Any(SyntaxKind.PublicKeyword)).ToArray();
+        }
+
+        public class SomeClas
+        {
+            private class InnerClass
+            {
+
+            }
+        }
+        private string GenerateClassTest(ClassDeclarationSyntax @class)
+        {
+            string sourceNamespace = null;
+   
+                var namespaceDeclarationSyntax = @class.GetParentSyntax<NamespaceDeclarationSyntax>();
+                sourceNamespace = namespaceDeclarationSyntax.Name.ToString();         
+            var methodBody = ParseStatement("Assert.Fail(\"autogenerated\");");
+            var methods = @class.DescendantNodes().OfType<MethodDeclarationSyntax>();
+            var members = new List<MemberDeclarationSyntax>();
+            IDictionary<string, int> mapa = new Dictionary<string, int>();
+            foreach (var method in methods)
+            {
+                if (!method.Modifiers.Any(SyntaxKind.PublicKeyword)) continue;
+                var methodName = method.Identifier.Text;
+                string testRow = "Test";
+                if (mapa.ContainsKey(methodName))
+                    testRow += ++mapa[methodName];
+                else mapa.Add(methodName, 0);
+                var methodDeclaration = 
+                    MethodDeclaration(
+                        PredefinedType(Token(SyntaxKind.VoidKeyword)),
+                        Identifier(methodName + testRow ))
+                    .AddModifiers(Token(SyntaxKind.PublicKeyword))
+                    .WithBody(Block(methodBody))
+                    .AddAttributeLists(
+                       AttributeList(
+                           SingletonSeparatedList(
+                               Attribute(IdentifierName("TestMethod")))));
+                    members.Add(methodDeclaration);
+            }
+            var className = @class.Identifier.Text;
+            var classDeclaration = ClassDeclaration(className+"Test")
+                .AddModifiers(Token(SyntaxKind.PublicKeyword))
+                .AddMembers(members.ToArray())
+                .AddAttributeLists(
+                    AttributeList(
+                        SingletonSeparatedList(
+                            Attribute(IdentifierName("TestClass")))));
+
+            var @namespace = NamespaceDeclaration(ParseName((sourceNamespace ?? "TestNamespace") + "Test")).AddMembers(classDeclaration);
+            var resultNode = CompilationUnit().AddUsings(
+                UsingDirective(ParseName("System")),
+                UsingDirective(ParseName("System.Collections.Generic")),
+                UsingDirective(ParseName("System.Linq")),
+                UsingDirective(ParseName("System.Text")),
+                UsingDirective(ParseName("Microsoft.VisualStudio.TestTools.UnitTesting"))
+                //UsingDirective(ParseName(""))
+                );
+            if (sourceNamespace != null)
+            {
+                resultNode =
+                    resultNode.AddUsings(UsingDirective(ParseName(sourceNamespace)));
+            }
+
+            var code = resultNode.AddMembers(@namespace);
+
+            return code.NormalizeWhitespace().ToFullString();
+        }
+    }
+}

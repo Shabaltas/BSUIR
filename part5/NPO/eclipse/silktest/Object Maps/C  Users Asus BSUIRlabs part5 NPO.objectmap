@@ -1,0 +1,9 @@
+<ObjectMap version="1">
+  <ObjectMapEntry id="C  Users Asus BSUIRlabs part5 NPO" locator="/Window[@caption=&apos;C:\Users\Asus\BSUIRlabs\part5\NPO\lab6\4TEST\file.txt - Sublime Text (UNREGISTERED)&apos;]">
+    <ObjectMapEntry id="Add Folder" locator="//MenuItem[@caption=&apos;Add Folder&apos;]"/>
+    <ObjectMapEntry id="File" locator="//Menu[@caption=&apos;File&apos;]"/>
+    <ObjectMapEntry id="Find" locator="//Menu[@caption=&apos;Find&apos;]"/>
+    <ObjectMapEntry id="Find in Files…" locator="//MenuItem[@caption=&apos;Find in Files…&apos;]"/>
+    <ObjectMapEntry id="Open Folder…" locator="//MenuItem[@caption=&apos;Open Folder…&apos;]"/>
+  </ObjectMapEntry>
+</ObjectMap>

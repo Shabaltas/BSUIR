@@ -1,0 +1,24 @@
+﻿[ ] const wDynamicMainWindow = X4TEST
+[ ] 
+[+] window MainWin X4TEST
+	[ ] locator "/MainWin[@caption='4TEST']"
+	[ ] 
+	[ ] // The working directory of the application when it is invoked
+	[ ] const sDir = "C:\Windows\System32"
+	[ ] 
+	[ ] // The command line used to invoke the application
+	[ ] const sCmdLine = "C:\Windows\explorer.exe"
+	[ ] 
+	[ ] // The list of windows the recovery system is to leave open
+	[ ] // const lwLeaveOpenWindows = {?}
+	[ ] // const lsLeaveOpenLocators = {?}
+	[+] Control DirectUIHWND
+		[ ] locator "[@windowClassName='DirectUIHWND'][3]"
+	[+] Control ShellView
+		[ ] locator "ShellView"
+	[+] MenuItem TextDocument
+		[ ] locator "Text Document"
+	[-] TextField TextField
+		[ ] locator "[2]"
+[ ] 
+[ ] 

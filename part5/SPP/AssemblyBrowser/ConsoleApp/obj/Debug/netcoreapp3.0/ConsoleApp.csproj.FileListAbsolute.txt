@@ -1,0 +1,14 @@
+C:\Users\Asus\BSUIRtheory\part5\СПП\AssemblyBrowser\ConsoleApp\obj\Debug\netcoreapp3.0\ConsoleApp.AssemblyInfoInputs.cache
+C:\Users\Asus\BSUIRtheory\part5\СПП\AssemblyBrowser\ConsoleApp\obj\Debug\netcoreapp3.0\ConsoleApp.AssemblyInfo.cs
+C:\Users\Asus\BSUIRtheory\part5\СПП\AssemblyBrowser\ConsoleApp\bin\Debug\netcoreapp3.0\ConsoleApp.exe
+C:\Users\Asus\BSUIRtheory\part5\СПП\AssemblyBrowser\ConsoleApp\bin\Debug\netcoreapp3.0\ConsoleApp.deps.json
+C:\Users\Asus\BSUIRtheory\part5\СПП\AssemblyBrowser\ConsoleApp\bin\Debug\netcoreapp3.0\ConsoleApp.runtimeconfig.json
+C:\Users\Asus\BSUIRtheory\part5\СПП\AssemblyBrowser\ConsoleApp\bin\Debug\netcoreapp3.0\ConsoleApp.runtimeconfig.dev.json
+C:\Users\Asus\BSUIRtheory\part5\СПП\AssemblyBrowser\ConsoleApp\bin\Debug\netcoreapp3.0\ConsoleApp.dll
+C:\Users\Asus\BSUIRtheory\part5\СПП\AssemblyBrowser\ConsoleApp\bin\Debug\netcoreapp3.0\ConsoleApp.pdb
+C:\Users\Asus\BSUIRtheory\part5\СПП\AssemblyBrowser\ConsoleApp\bin\Debug\netcoreapp3.0\AssemblyBrowserLogic.dll
+C:\Users\Asus\BSUIRtheory\part5\СПП\AssemblyBrowser\ConsoleApp\bin\Debug\netcoreapp3.0\AssemblyBrowserLogic.pdb
+C:\Users\Asus\BSUIRtheory\part5\СПП\AssemblyBrowser\ConsoleApp\obj\Debug\netcoreapp3.0\ConsoleApp.csproj.CopyComplete
+C:\Users\Asus\BSUIRtheory\part5\СПП\AssemblyBrowser\ConsoleApp\obj\Debug\netcoreapp3.0\ConsoleApp.dll
+C:\Users\Asus\BSUIRtheory\part5\СПП\AssemblyBrowser\ConsoleApp\obj\Debug\netcoreapp3.0\ConsoleApp.pdb
+C:\Users\Asus\BSUIRtheory\part5\СПП\AssemblyBrowser\ConsoleApp\obj\Debug\netcoreapp3.0\ConsoleApp.csprojAssemblyReference.cache

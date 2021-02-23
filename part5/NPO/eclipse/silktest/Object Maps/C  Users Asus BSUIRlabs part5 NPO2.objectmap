@@ -1,0 +1,6 @@
+<ObjectMap version="1">
+  <ObjectMapEntry id="C  Users Asus BSUIRlabs part5 NPO2" locator="/Window[@caption=&apos;C:\Users\Asus\BSUIRlabs\part5\NPO\lab6\2\for2.txt • - Sublime Text (UNREGISTERED)&apos;]">
+    <ObjectMapEntry id="File" locator="//Menu[@caption=&apos;File&apos;]"/>
+    <ObjectMapEntry id="Save All" locator="//MenuItem[@caption=&apos;Save All&apos;]"/>
+  </ObjectMapEntry>
+</ObjectMap>

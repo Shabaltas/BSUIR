@@ -1,0 +1,30 @@
+.table{
+    margin: 20px;
+    max-width: 98%;
+}
+
+.table_container {
+    align-content: center;
+    display: block;
+}
+
+.table_head{
+    background-color: #a2b1d2;
+    color: black;
+}
+
+.table_head th {
+    font-weight: bold;
+}
+
+.line input {
+    padding: 5%;
+    height: 20px;
+    width: 300px;
+}
+
+span.MuiSwitch-root {
+    width: 100px;
+}
+
+

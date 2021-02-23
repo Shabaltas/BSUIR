@@ -1,0 +1,8 @@
+C:\Users\Asus\BSUIRtheory\part5\СПП\Faker\FakerApp\FakerApp\bin\Debug\FakerApp.exe
+C:\Users\Asus\BSUIRtheory\part5\СПП\Faker\FakerApp\FakerApp\bin\Debug\FakerApp.pdb
+C:\Users\Asus\BSUIRtheory\part5\СПП\Faker\FakerApp\FakerApp\bin\Debug\Faker.dll
+C:\Users\Asus\BSUIRtheory\part5\СПП\Faker\FakerApp\FakerApp\bin\Debug\Faker.pdb
+C:\Users\Asus\BSUIRtheory\part5\СПП\Faker\FakerApp\FakerApp\obj\Debug\FakerApp.csprojAssemblyReference.cache
+C:\Users\Asus\BSUIRtheory\part5\СПП\Faker\FakerApp\FakerApp\obj\Debug\FakerApp.csproj.CopyComplete
+C:\Users\Asus\BSUIRtheory\part5\СПП\Faker\FakerApp\FakerApp\obj\Debug\FakerApp.exe
+C:\Users\Asus\BSUIRtheory\part5\СПП\Faker\FakerApp\FakerApp\obj\Debug\FakerApp.pdb

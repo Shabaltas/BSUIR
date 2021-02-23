@@ -1,0 +1,7 @@
+C:\Users\Asus\BSUIRtheory\part5\СПП\AssemblyBrowser\TestProject\bin\Debug\netstandard2.0\TestProject.deps.json
+C:\Users\Asus\BSUIRtheory\part5\СПП\AssemblyBrowser\TestProject\bin\Debug\netstandard2.0\TestProject.dll
+C:\Users\Asus\BSUIRtheory\part5\СПП\AssemblyBrowser\TestProject\bin\Debug\netstandard2.0\TestProject.pdb
+C:\Users\Asus\BSUIRtheory\part5\СПП\AssemblyBrowser\TestProject\obj\Debug\netstandard2.0\TestProject.AssemblyInfoInputs.cache
+C:\Users\Asus\BSUIRtheory\part5\СПП\AssemblyBrowser\TestProject\obj\Debug\netstandard2.0\TestProject.AssemblyInfo.cs
+C:\Users\Asus\BSUIRtheory\part5\СПП\AssemblyBrowser\TestProject\obj\Debug\netstandard2.0\TestProject.dll
+C:\Users\Asus\BSUIRtheory\part5\СПП\AssemblyBrowser\TestProject\obj\Debug\netstandard2.0\TestProject.pdb

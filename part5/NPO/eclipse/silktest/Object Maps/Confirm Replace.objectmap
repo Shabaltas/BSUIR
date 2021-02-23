@@ -1,0 +1,5 @@
+<ObjectMap version="1">
+  <ObjectMapEntry id="Confirm Replace" locator="/Window[@caption=&apos;Confirm Replace&apos;]">
+    <ObjectMapEntry id="Replace" locator="//PushButton[@caption=&apos;Replace&apos;]"/>
+  </ObjectMapEntry>
+</ObjectMap>

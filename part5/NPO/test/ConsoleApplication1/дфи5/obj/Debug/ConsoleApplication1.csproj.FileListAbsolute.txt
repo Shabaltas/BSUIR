@@ -1,0 +1,8 @@
+C:\Users\Asus\BSUIRlabs\part5\NPO\test\ConsoleApplication1\дфи5\bin\Debug\ConsoleApplication1.exe
+C:\Users\Asus\BSUIRlabs\part5\NPO\test\ConsoleApplication1\дфи5\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Asus\BSUIRlabs\part5\NPO\test\ConsoleApplication1\дфи5\bin\Debug\WebDriver.dll
+C:\Users\Asus\BSUIRlabs\part5\NPO\test\ConsoleApplication1\дфи5\bin\Debug\WebDriver.xml
+C:\Users\Asus\BSUIRlabs\part5\NPO\test\ConsoleApplication1\дфи5\obj\Debug\ConsoleApplication1.csprojAssemblyReference.cache
+C:\Users\Asus\BSUIRlabs\part5\NPO\test\ConsoleApplication1\дфи5\obj\Debug\ConsoleApplication1.csproj.CopyComplete
+C:\Users\Asus\BSUIRlabs\part5\NPO\test\ConsoleApplication1\дфи5\obj\Debug\ConsoleApplication1.exe
+C:\Users\Asus\BSUIRlabs\part5\NPO\test\ConsoleApplication1\дфи5\obj\Debug\ConsoleApplication1.pdb
