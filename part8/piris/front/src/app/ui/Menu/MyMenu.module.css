@@ -1,0 +1,8 @@
+.menu {
+    display: inline-flex;
+}
+
+.menu button {
+    color: #2c5b27;
+    font-weight: bold;
+}
