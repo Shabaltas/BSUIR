@@ -12,13 +12,17 @@ interface SelectFormItemProps {
     items: SimpleItem[],
     name: string | (string | number)[],
     label: string,
-    val: string
+    val: string,
+    onChange?: (event: any) => void,
+    selectedValue?: any
 }
 
-export const SelectFormItem = observer(({items, label, name, val= "name"}: SelectFormItemProps) => {
+export const SelectFormItem = observer(({items, label, name,
+                                            val= "name", onChange, selectedValue}
+                                            : SelectFormItemProps) => {
     return (
         items ? <Form.Item name={name} label={label} rules={[getRequireRule(label)]}>
-            <Select>
+            <Select onChange={onChange} value={selectedValue}>
                 {
                     items.map((item) => {
                         return <Select.Option key={item['id']} value={item['id']}>{item[val]}</Select.Option>

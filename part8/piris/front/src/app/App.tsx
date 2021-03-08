@@ -8,6 +8,9 @@ import {HeaderContainer} from 'app/ui/HeaderContainer';
 import {Layout} from 'antd';
 import {Content} from 'antd/es/layout/layout';
 import {CreateUSerForm} from 'app/ui/CreateUserForm';
+import {CreateDepositForm} from "./ui/CreateDepositForm/CreateDepositForm";
+import {Accounts} from "./ui/AllAccounts/Accounts";
+import {AccountForm} from "./ui/AllAccounts/Account";
 
 function App() {
     return (
@@ -20,7 +23,10 @@ function App() {
                             <Route exact path={Routes.clients} component={Users}/>
                             <Route exact path={Routes.clients + '/edit/:id'} component={EditUserComponent}/>
                             <Route exact path={Routes.createClient} component={CreateUSerForm}/>
-                            <Redirect to={Routes.clients}/>
+                            <Route exact path={Routes.deposits + '/new/:clientId'} component={CreateDepositForm}/>
+                            <Route exact path={Routes.depositAccounts} component={Accounts}/>
+                            <Route exact path={Routes.depositAccounts + '/:accountId'} component={AccountForm}/>
+                            {/*<Redirect to={Routes.clients}/>*/}
                         </Switch>
                     </Content>
                 </BrowserRouter>

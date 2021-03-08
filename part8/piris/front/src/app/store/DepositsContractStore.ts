@@ -1,11 +1,12 @@
 import {makeAutoObservable, runInAction, toJS} from "mobx";
 import {RequestService} from 'app/api/RequestService';
+import {ItemsStore} from "./ItemsStore";
+import {AxiosResponse} from "axios";
 
 
-export class ItemsStore<T> {
+export class DepositContractsStore<T>{
 
     protected _items: T[] = [];
-    protected _item: T = {} as T;
     protected readonly endpoint: string = '';
 
     constructor(endpoint: string) {
@@ -22,33 +23,12 @@ export class ItemsStore<T> {
         });
     }
 
-    public fetchItemById = (id: number) => {
-        return RequestService.get(`${this.endpoint}/${id}`).then((response) => {
-            console.log(response)
-            runInAction(() => {
-                this._item = response.data;
-            })
-        });
-    }
-
     public createItem = (item: T): Promise<any> => {
         return RequestService.post(this.endpoint, {}, item).then(this.fetchItems);
     }
-
 
     get items(): T[] {
         return toJS(this._items);
     }
 
-    get fetchedItem(): T {
-        return toJS(this._item);
-    }
-
-    public updateItem = (param: any, data: any): Promise<any> => {
-        return RequestService.put(this.endpoint + `/${param}`, {}, data).then(this.fetchItems);
-    }
-
-    public delete = (param: any): Promise<any> => {
-        return RequestService.delete(this.endpoint + `/${param}`, {}).then(this.fetchItems);
-    }
 }

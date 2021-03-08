@@ -8,12 +8,12 @@ import {observer} from 'mobx-react-lite';
 import {SelectFormItem} from 'app/ui/form/SelectFormItem';
 import {getDefaultValuesFromObject, getObjectFromValues} from 'app/ui/form/utils';
 import moment from 'moment';
-import {debuglog} from "util";
 
 interface UserFormProps {
     user?: User,
     onSave: (user: User) => void;
     onCancel: () => void;
+    onOpenDeposit?: (user: User) => void;
 }
 
 const NAME = 'name';
@@ -151,6 +151,11 @@ export const UserForm = observer((props: UserFormProps) => {
                 <Form.Item {...tailLayout}>
                     <Button type="primary" htmlType="submit">Save</Button>
                 </Form.Item>
+                {props.user && props.onOpenDeposit
+                    ? <Form.Item {...tailLayout}>
+                        <Button type="default" htmlType="button" onClick={() => props.onOpenDeposit!(props.user!)}>Open Deposit</Button>
+                    </Form.Item>
+                    : <></>}
             </Form>
         </>)
 })

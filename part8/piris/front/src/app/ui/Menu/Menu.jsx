@@ -29,7 +29,8 @@ const MyMenu = (props) => {
                 onClose={handleClose}
             >
                 <NavLink to={Routes.clients}><MenuItem onClick={handleClose}>All Clients</MenuItem></NavLink>
-                <NavLink to={Routes.createClient}><MenuItem onClick={handleClose}>Create</MenuItem></NavLink>
+                <NavLink to={Routes.createClient}><MenuItem onClick={handleClose}>Create Client</MenuItem></NavLink>
+                <NavLink to={Routes.depositAccounts}><MenuItem onClick={handleClose}>Deposit Accounts</MenuItem></NavLink>
             </Menu>
         </div>
     )
