@@ -8,8 +8,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @RestController
@@ -57,12 +59,12 @@ public class ClientsController {
     }
 
     @PostMapping
-    public void createClient(@RequestBody ClientDto client) {
+    public void createClient(@Valid @RequestBody ClientDto client) {
         clientsService.createClient(client);
     }
 
     @PutMapping("/{clientId}")
-    public void updateClient(@RequestBody ClientDto client, @PathVariable Long clientId) {
+    public void updateClient(@Valid @RequestBody ClientDto client, @PathVariable Long clientId) {
         clientsService.updateClient(clientId, client);
     }
 

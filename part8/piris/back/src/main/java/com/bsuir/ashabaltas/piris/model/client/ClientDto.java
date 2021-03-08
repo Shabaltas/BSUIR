@@ -1,12 +1,12 @@
 package com.bsuir.ashabaltas.piris.model.client;
 
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
 import lombok.Setter;
 
 import javax.validation.constraints.*;
 import java.util.Date;
+import java.time.LocalDate;
 
 @Getter
 @Setter
@@ -26,21 +26,21 @@ public class ClientDto {
     private Date date_of_birth;
     @NotNull
     @NotEmpty
-    @Pattern(regexp = "[A-Z]{2,5}")
+    @Pattern(regexp = "[A-Z]{2,5}", message = "Passport series")
     private String passport_series;
     @NotNull
     @NotEmpty
-    @Pattern(regexp = "[0-9]{7,10}")
+    @Pattern(regexp = "[0-9]{7,10}", message = "Phone Number")
     private String passport_number;
     @NotNull
     @NotEmpty
     private String issued_by;
     @NotNull
-    @Past
+    @Past(message = "DATE OF ISSUE SUCKS")
     private Date date_of_issue;
     @NotNull
     @NotEmpty
-    @Pattern(regexp = "[0-9,A-Z]{25}") //TODO
+    @Pattern(regexp = "[0-9A-Z]+", message = "IDENT NUMBER") //TODO
     private String identification_number;
     @NotNull
     @NotEmpty
@@ -52,20 +52,16 @@ public class ClientDto {
     private String address_of_residence;
     @NotNull
     @NotEmpty
-    @Pattern(regexp = "[0-9]{7}")
+    @Pattern(regexp = "\\d{7}", message = "Please provide a valid home phone")
     private String home_phone;
     @NotNull
     @NotEmpty
-    @Pattern(regexp = "[0-9]{9}")
+    @Pattern(regexp = "\\d{9}", message = "Please provide a valid mobile phone")
     private String mobile_phone;
     @NotNull
     @Email
     private String email;
-    @NotNull
-    @NotEmpty
     private String place_of_work;
-    @NotNull
-    @NotEmpty
     private String position;
     @NotNull
     private Integer marital_status;

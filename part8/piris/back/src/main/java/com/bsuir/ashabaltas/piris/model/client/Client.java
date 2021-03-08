@@ -1,12 +1,14 @@
 package com.bsuir.ashabaltas.piris.model.client;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
-import java.sql.Date;
+import java.util.Date;
 
 @Setter
+@Getter
 @Entity
 @Table(schema = "piris", name = "clients")
 public class Client {
@@ -47,34 +49,34 @@ public class Client {
     private String place_of_birth;
     @Column
     @JsonProperty
-    private Long cityOfResidence; // int???
+    private Integer city_of_residence;
     @Column
     @JsonProperty
-    private String addressOfResidence;
+    private String address_of_residence;
     @Column
     @JsonProperty
-    private String homePhone;
+    private String home_phone;
     @Column
     @JsonProperty
-    private String mobilePhone;
+    private String mobile_phone;
     @Column
     @JsonProperty
     private String email;
     @Column
     @JsonProperty
-    private String placeOfWork;
+    private String place_of_work;
     @Column
     @JsonProperty
     private String position;
     @Column
     @JsonProperty
-    private Long maritalStatus;
+    private Integer marital_status;
     @Column
     @JsonProperty
-    private Long citizenship;
+    private Integer citizenship;
     @Column
     @JsonProperty
-    private Long disability;
+    private Integer disability;
     @Column
     @JsonProperty
     private boolean retiree;
