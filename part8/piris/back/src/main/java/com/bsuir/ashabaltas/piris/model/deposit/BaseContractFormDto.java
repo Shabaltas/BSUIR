@@ -6,7 +6,7 @@ import lombok.Setter;
 import javax.validation.constraints.FutureOrPresent;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Positive;
-import java.sql.Date;
+import java.util.Date;
 
 @Getter
 @Setter
@@ -14,18 +14,17 @@ public abstract class BaseContractFormDto {
 
     @NotNull
     @Positive
-    private Long depositId;
+    private Long deposit;
 
     @NotNull
     @Positive
-    private Long depositTypeId;
+    private Long depositType;
 
     @NotNull
     @Positive
-    private Long currencyId;
+    private Long currency;
 
     @NotNull
-    @FutureOrPresent
     private Date startDate;
 
     @NotNull

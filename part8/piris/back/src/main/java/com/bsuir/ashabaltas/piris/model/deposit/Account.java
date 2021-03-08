@@ -2,6 +2,7 @@ package com.bsuir.ashabaltas.piris.model.deposit;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
@@ -10,6 +11,7 @@ import javax.persistence.*;
 @Getter
 @Entity
 @Table(schema = "piris", name = "account")
+@NoArgsConstructor
 public class Account {
     public Account(String number, int code, double debet, double credit, double saldo, long depositContractId, long clientId) {
         this.number = number;
@@ -49,11 +51,11 @@ public class Account {
 
     @Column(name = "deposit_contract_id")
     @JsonProperty
-    private long depositContractId;
+    private Long depositContractId;
 
     @Column(name = "client_id")
     @JsonProperty
-    private long clientId;
+    private Long clientId;
 
     public void addDebet(double diff) {
         debet += diff;

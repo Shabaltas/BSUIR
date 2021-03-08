@@ -5,7 +5,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.sql.Date;
+import java.util.Date;
 
 @Setter
 @AllArgsConstructor
@@ -25,14 +25,16 @@ public class AccountResponseDto extends BaseAccountResponseDto{
     private Date startDate;
     private Date endDate;
 
+    private double saldo;
     public AccountResponseDto(Long accountId, String accountNumber,
                               Long clientId, String depositName,
-                              double currentAmount, String clintSurname,
+                              double credit, double debet, String clintSurname,
                               String clientName, String clientPatronymic,
                               String currency, String depositType,
                               short termInMonth, float interestOnDeposit,
-                              String contractNumber, Date startDate, Date endDate) {
-        super(accountId, accountNumber, clientId, depositName, currentAmount);
+                              String contractNumber, Date startDate,
+                              Date endDate, double saldo) {
+        super(accountId, accountNumber, clientId, depositName, credit, debet);
         this.clientSurname = clintSurname;
         this.clientName = clientName;
         this.clientPatronymic = clientPatronymic;
@@ -43,5 +45,6 @@ public class AccountResponseDto extends BaseAccountResponseDto{
         this.contractNumber = contractNumber;
         this.startDate = startDate;
         this.endDate = endDate;
+        this.saldo = saldo;
     }
 }

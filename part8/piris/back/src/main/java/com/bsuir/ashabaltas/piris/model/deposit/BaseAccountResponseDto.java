@@ -10,9 +10,10 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class BaseAccountResponseDto {
-    private Long accountId;
+    private Long id;
     private String accountNumber;
     private Long clientId;
     private String depositName;
-    private double currentAmount;
+    private double credit;
+    private double debet;
 }

@@ -6,7 +6,7 @@ import lombok.Setter;
 import javax.validation.constraints.Future;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Positive;
-import java.sql.Date;
+import java.util.Date;
 
 @Getter
 @Setter

@@ -50,8 +50,8 @@ public class DepositsController {
         return depositsService.getAccounts();
     }
 
-    @GetMapping("/accounts/{clientId}")
-    public List<BaseAccountResponseDto> getAccountsForClient(@PathVariable Long clientId) {
+    @GetMapping(value = "/accounts", params = {"client_id"})
+    public List<BaseAccountResponseDto> getAccountsForClient(@RequestParam("client_id") Long clientId) {
         return depositsService.getAccountsForClient(clientId);
     }
 
@@ -60,8 +60,9 @@ public class DepositsController {
         return depositsService.getAccount(accountId);
     }
 
-    @PostMapping("/new")
+    @PostMapping
     public void openDeposit(@Valid @RequestBody FixedTermContractDto dto) {
+        System.out.println(dto.toString());
         depositsService.openDeposit(dto);
     }
 
